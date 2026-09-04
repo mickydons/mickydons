@@ -18,7 +18,7 @@ const AiDraftRecoveryMessageInputSchema = z.object({
 export type AiDraftRecoveryMessageInput = z.infer<typeof AiDraftRecoveryMessageInputSchema>;
 
 const AiDraftRecoveryMessageOutputSchema = z.object({
-  draftedMessage: z.string().describe('A detailed and clear drafted message for the recovery request, including optimal phrasing and necessary details for AnalogHeal forensic agents.'),
+  draftedMessage: z.string().describe('A detailed and clear drafted message for the recovery request, including optimal phrasing and necessary details for Mickydons forensic agents.'),
 });
 export type AiDraftRecoveryMessageOutput = z.infer<typeof AiDraftRecoveryMessageOutputSchema>;
 
@@ -32,7 +32,7 @@ const draftRecoveryMessagePrompt = ai.definePrompt({
   name: 'draftRecoveryMessagePrompt',
   input: {schema: AiDraftRecoveryMessageInputSchema},
   output: {schema: AiDraftRecoveryMessageOutputSchema},
-  prompt: `You are a forensic intake specialist for AnalogHeal Forensics, a professional digital asset reclamation laboratory. Your task is to help victims draft a detailed and technical recovery request message based on their information. The message must be professional, empathetic, and formatted to help forensic analysts quickly initiate the tracing process.
+  prompt: `You are a case intake specialist for Mickydons Trace & Recovery, an independent scam investigation and digital asset tracing firm. Your task is to help victims draft a clear, structured case summary based on their information. The message must be empathetic, organized, and formatted to help case analysts quickly initiate the evidence review and tracing process.
 
 Focus on:
 - Clearly stating the forensic recovery type.

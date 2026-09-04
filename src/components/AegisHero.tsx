@@ -19,7 +19,7 @@ export function AegisHero() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-primary shadow-[0_0_5px_rgba(59,130,246,0.8)]"></span>
             </span>
-            Verified AnalogHeal Recovery Specialists
+            Verified Mickydons Recovery Specialists
           </div>
           
           <h1 className="text-5xl lg:text-7xl font-headline font-bold leading-tight mb-6 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-100">

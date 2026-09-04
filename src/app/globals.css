@@ -4,45 +4,61 @@
 
 @layer base {
   :root {
-    /* Midnight Gold Authority Palette */
-    --background: 225 51% 6%; /* #070B14 Dark Navy Base */
-    --foreground: 223 25% 93%; /* #E6EAF2 */
+    /* Cutting-Edge Forensic Intelligence: Midnight + Electric Cyan + Platinum */
+    /* Background: Deep Black #06090D */
+    --background: 214 37% 4%;
+    /* Primary text: Platinum / White #F1F5F7 */
+    --foreground: 200 24% 96%;
     
-    --card: 223 45% 10%; /* #0B1426 Layered Blue */
-    --card-foreground: 223 25% 93%;
+    /* Card: Midnight Card #111C26 */
+    --card: 211 38% 11%;
+    --card-foreground: 200 24% 96%;
     
-    --popover: 225 51% 6%;
-    --popover-foreground: 223 25% 93%;
+    /* Popover: Midnight #0C131B */
+    --popover: 213 38% 8%;
+    --popover-foreground: 200 24% 96%;
     
-    /* Royal Gold for Action & Recovered Wealth (#F59E0B) */
-    --primary: 38 92% 50%; 
-    --primary-foreground: 38 92% 5%;
+    /* Primary Action: Electric Cyan (#35D6D0) */
+    --primary: 178 64% 52%; 
+    /* Button text: Deep Black (#06090D) */
+    --primary-foreground: 214 37% 4%;
     
-    --secondary: 221 37% 16%; /* #111827 Charcoal Blue */
-    --secondary-foreground: 223 25% 93%;
+    /* Secondary BG: Midnight #0C131B */
+    --secondary: 213 38% 8%;
+    --secondary-foreground: 200 24% 96%;
     
-    --muted: 221 37% 16%;
-    --muted-foreground: 215 15% 65%; /* #9AA4B2 */
+    --muted: 211 38% 14%;
+    /* Secondary text: Muted Slate #8B9AA5 */
+    --muted-foreground: 206 13% 60%;
     
-    /* Forensic Cyan for Intelligence & Data (#22D3EE) */
-    --accent: 189 86% 53%; 
-    --accent-foreground: 225 51% 6%;
+    /* Accent bright: Cyan Highlight (#8AF2E9) */
+    --accent: 175 79% 75%; 
+    --accent-foreground: 214 37% 4%;
     
-    --destructive: 0 84% 60%; /* #EF4444 Alert Red */
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 200 24% 96%;
     
-    --border: 225 51% 12%;
-    --input: 225 51% 12%;
-    --ring: 38 92% 50%;
+    /* Border: Cyber Border #24313D */
+    --border: 210 26% 19%;
+    --input: 210 26% 19%;
+    --ring: 178 64% 52%;
     
     --radius: 0.75rem;
 
+    /* Success / Signal: Electric Cyan #35D6D0 */
+    --success: 178 64% 52%;
+    --success-foreground: 214 37% 4%;
+
+    /* Secondary Trust Accent: Platinum Gold #C6A96B */
+    --gold: 41 45% 60%;
+    --gold-foreground: 214 37% 4%;
+
     /* Chart Colors */
-    --chart-1: 38 92% 50%;  /* Wealth (Gold) */
-    --chart-2: 189 86% 53%; /* Intelligence (Cyan) */
-    --chart-3: 142 71% 45%; /* Success (Green) */
-    --chart-4: 0 84% 60%;   /* Threat (Red) */
-    --chart-5: 221 37% 40%;
+    --chart-1: 178 64% 52%;  /* Electric Cyan */
+    --chart-2: 175 79% 75%;  /* Cyan Highlight */
+    --chart-3: 41 45% 60%;   /* Platinum Gold */
+    --chart-4: 206 13% 60%;  /* Muted Slate */
+    --chart-5: 210 26% 19%;  /* Cyber Border */
   }
 }
 
@@ -52,49 +68,61 @@
   }
   body {
     @apply bg-background text-foreground font-body antialiased;
-    /* Premium Midnight Gradient */
-    background: linear-gradient(135deg, #070B14 0%, #0B1426 50%, #111827 100%);
+    /* High-Tech Intelligence Midnight Gradient */
+    background: radial-gradient(ellipse at 50% -10%, #0C131B 0%, #06090D 70%);
+    background-color: #06090D;
     background-attachment: fixed;
   }
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-headline tracking-tight;
+  h1, h2 {
+    @apply font-headline tracking-tight text-[#F1F5F7];
+  }
+  h3, h4, h5, h6 {
+    @apply font-body tracking-tight text-[#F1F5F7];
   }
 }
 
 .glass-header {
-  @apply sticky top-0 z-50 backdrop-blur-md bg-background/80 border-b border-white/5;
+  @apply sticky top-0 z-50 backdrop-blur-md bg-[#06090D]/85 border-b border-[#24313D]/80;
 }
 
 .text-gradient-action {
-  @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-amber-300;
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-[#35D6D0] via-[#8AF2E9] to-[#35D6D0];
 }
 
 .text-gradient-intelligence {
-  @apply bg-clip-text text-transparent bg-gradient-to-r from-accent to-cyan-300;
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-[#35D6D0] via-[#F1F5F7] to-[#8B9AA5];
 }
 
 .hero-glow {
-  background: radial-gradient(circle at 50% -20%, rgba(245, 158, 11, 0.05) 0%, transparent 70%);
+  background: radial-gradient(circle at 50% -20%, rgba(53, 214, 208, 0.08) 0%, transparent 70%);
 }
 
 .btn-glow-action {
-  @apply shadow-lg shadow-primary/30 hover:shadow-primary/50 transition-all;
+  @apply shadow-lg shadow-[#35D6D0]/20 hover:shadow-[#35D6D0]/40 bg-[#35D6D0] hover:bg-[#8AF2E9] text-[#06090D] font-bold tracking-wide transition-all border border-[#8AF2E9]/40;
 }
 
 .btn-glow-intelligence {
-  @apply shadow-lg shadow-accent/20 hover:shadow-accent/40 transition-all;
+  @apply shadow-lg shadow-[#35D6D0]/15 hover:shadow-[#35D6D0]/30 transition-all;
 }
 
 .glow-intelligence {
-  @apply shadow-[0_0_15px_rgba(34,211,238,0.1)] hover:shadow-[0_0_25px_rgba(34,211,238,0.2)] transition-shadow duration-300;
+  @apply shadow-[0_0_20px_rgba(53,214,208,0.08)] hover:shadow-[0_0_30px_rgba(53,214,208,0.18)] transition-shadow duration-300;
 }
 
 .glow-success {
-  @apply shadow-[0_0_15px_rgba(34,197,94,0.15)] transition-shadow duration-300;
+  @apply shadow-[0_0_15px_rgba(53,214,208,0.2)] transition-shadow duration-300;
+}
+
+.glow-confirmation {
+  @apply shadow-[0_0_12px_rgba(53,214,208,0.15)];
+}
+
+.glow-interaction {
+  @apply shadow-[0_0_15px_rgba(53,214,208,0.12)] hover:shadow-[0_0_25px_rgba(53,214,208,0.22)] transition-all;
 }
 
 .card-hover {
-  @apply hover:border-primary/30 hover:shadow-2xl hover:shadow-primary/5 transition-all duration-300;
+  @apply hover:border-[#35D6D0]/45 hover:shadow-2xl hover:shadow-[#35D6D0]/5 transition-all duration-300;
 }
 
 @keyframes pulse-green {
@@ -104,4 +132,27 @@
 
 .animate-pulse-green {
   animation: pulse-green 2s infinite ease-in-out;
+}
+
+@keyframes trace-line {
+  from { stroke-dashoffset: 0; }
+  to { stroke-dashoffset: -32; }
+}
+
+.animate-trace-line {
+  animation: trace-line 2s linear infinite;
+}
+
+.animate-trace-line-fast {
+  animation: trace-line 1.6s linear infinite;
+}
+
+@keyframes pulse-threat {
+  0%, 100% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.2); opacity: 1; }
+}
+
+.animate-pulse-threat {
+  transform-origin: 440px 280px;
+  animation: pulse-threat 1.5s ease-in-out infinite;
 }

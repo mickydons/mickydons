@@ -30,7 +30,7 @@ const knowledgeQuestionPrompt = ai.definePrompt({
   name: 'knowledgeQuestionPrompt',
   input: { schema: AIAnswerKnowledgeQuestionInputSchema },
   output: { schema: AIAnswerKnowledgeQuestionOutputSchema },
-  prompt: `You are a lead analyst at AnalogHeal Forensics, an expert in crypto recovery and digital asset reclamation. Your goal is to provide concise, direct, and authoritative answers to user questions based on forensic principles.
+  prompt: `You are a lead analyst at Mickydons Trace & Recovery, an expert in scam investigation, on-chain asset tracing, and fraud recovery support. Your goal is to provide concise, direct, and authoritative answers to user questions based on investigative principles.
 
 Answer the following question based on the provided context articles. If no context articles are provided, or if they do not contain the answer, use your specialized forensic knowledge to answer as best as you can.
 

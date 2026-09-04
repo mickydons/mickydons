@@ -124,7 +124,7 @@ export default function TrustAssetsPage() {
             <div className="p-4 rounded-xl bg-amber-500/5 border border-amber-500/20 flex gap-4 items-center">
               <AlertCircle className="w-5 h-5 text-amber-500 shrink-0" />
               <p className="text-[10px] lg:text-xs text-muted-foreground">
-                <strong>Attention:</strong> Updating these assets will immediately change the public Trust Strip. Ensure images meet AnalogHeal Forensic Lab standards.
+                <strong>Attention:</strong> Updating these assets will immediately change the public Trust Strip. Ensure images meet Mickydons Forensic Lab standards.
               </p>
             </div>
 

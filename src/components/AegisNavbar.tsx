@@ -37,7 +37,7 @@ export function AegisNavbar() {
               <Shield className="w-8 h-8 text-primary" />
             </div>
             <span className="font-headline text-2xl font-bold tracking-tight">
-              Analog<span className="text-primary">Heal</span>
+              Mickydons<span className="text-primary">Forensics</span>
             </span>
           </div>
         </div>
@@ -53,7 +53,7 @@ export function AegisNavbar() {
             <Shield className="w-8 h-8 text-primary" />
           </div>
           <span className="font-headline text-2xl font-bold tracking-tight">
-            Analog<span className="text-primary">Heal</span>
+            Mickydons<span className="text-primary">Forensics</span>
           </span>
         </Link>
 
@@ -77,7 +77,7 @@ export function AegisNavbar() {
             <span className="text-[10px] font-bold text-green-500 uppercase tracking-wider">Agents Online</span>
           </div>
           <Button variant="secondary" size="sm" className="gap-2 text-primary-foreground font-semibold glow-interaction" asChild>
-            <a href="https://t.me/AnalogHealSupport" target="_blank" rel="noopener noreferrer">
+            <a href="https://t.me/MickydonsSupport" target="_blank" rel="noopener noreferrer">
               <MessageCircle className="w-4 h-4" />
               Telegram
             </a>
@@ -128,7 +128,7 @@ export function AegisNavbar() {
                     </div>
                     <p className="text-[10px] text-muted-foreground mb-4">Our specialists are currently active and typically reply in under 5 minutes.</p>
                     <Button className="w-full justify-between h-11" variant="secondary" asChild>
-                      <a href="https://t.me/AnalogHealSupport" target="_blank" rel="noopener noreferrer">
+                      <a href="https://t.me/MickydonsSupport" target="_blank" rel="noopener noreferrer">
                         Join Telegram <MessageCircle className="w-5 h-5" />
                       </a>
                     </Button>

@@ -33,7 +33,7 @@ export function AegisLiveSupport() {
               <div className="absolute -bottom-0.5 -right-0.5 w-3 h-3 bg-green-500 border-2 border-primary rounded-full animate-pulse-green shadow-[0_0_5px_rgba(34,197,94,1)]" />
             </div>
             <div>
-              <div className="font-bold text-sm font-body">AnalogHeal Support</div>
+              <div className="font-bold text-sm font-body">Mickydons Support</div>
               <div className="text-[10px] opacity-80 flex items-center gap-1 font-body">
                 <span className="w-1.5 h-1.5 rounded-full bg-green-400" />
                 Specialists Online
@@ -53,7 +53,7 @@ export function AegisLiveSupport() {
           <div className="space-y-2">
             <div className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground mb-1 font-body">Secure Direct Lines</div>
             <Button variant="secondary" className="w-full justify-between h-11 text-xs font-bold font-body glow-interaction" asChild>
-              <a href="https://t.me/AnalogHealSupport" target="_blank" rel="noopener noreferrer">
+              <a href="https://t.me/MickydonsSupport" target="_blank" rel="noopener noreferrer">
                 Verified Telegram <MessageCircle className="w-4 h-4" />
               </a>
             </Button>

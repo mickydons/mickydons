@@ -10,13 +10,47 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        body: ['Inter', 'sans-serif'],
-        headline: ['Playfair Display', 'serif'],
+        body: ['var(--font-manrope)', 'Manrope', 'sans-serif'],
+        headline: ['var(--font-dm-serif)', 'DM Serif Display', 'serif'],
         code: ['monospace'],
       },
       colors: {
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
+        deepblack: '#06090D',
+        midnight: '#0C131B',
+        midnightcard: '#111C26',
+        cyberborder: '#24313D',
+        platinum: '#F1F5F7',
+        mutedslate: '#8B9AA5',
+        cyan: {
+          DEFAULT: '#35D6D0',
+          bright: '#8AF2E9',
+          glow: 'rgba(53, 214, 208, 0.25)',
+        },
+        goldaccent: {
+          DEFAULT: '#C6A96B',
+          bright: '#DFC285',
+          muted: 'rgba(198, 169, 107, 0.15)',
+        },
+        // Semantic aliases aligned to new theme
+        obsidian: '#06090D',
+        charcoal: '#0C131B',
+        slateblack: '#111C26',
+        graphite: '#24313D',
+        ivory: '#F1F5F7',
+        warmgray: '#8B9AA5',
+        gold: {
+          DEFAULT: '#C6A96B',
+          bright: '#DFC285',
+          soft: '#DFC285',
+          muted: 'rgba(198, 169, 107, 0.15)',
+        },
+        jade: {
+          DEFAULT: '#35D6D0',
+          bright: '#8AF2E9',
+          muted: 'rgba(53, 214, 208, 0.15)',
+        },
         card: {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))',

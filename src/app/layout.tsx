@@ -1,11 +1,25 @@
 import type {Metadata} from 'next';
+import { Manrope, DM_Serif_Display } from 'next/font/google';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 import Script from 'next/script';
 
+const manrope = Manrope({
+  subsets: ['latin'],
+  variable: '--font-manrope',
+  display: 'swap',
+});
+
+const dmSerifDisplay = DM_Serif_Display({
+  weight: '400',
+  subsets: ['latin'],
+  variable: '--font-dm-serif',
+  display: 'swap',
+});
+
 export const metadata: Metadata = {
-  title: 'AnalogHeal Forensics | Expert Crypto & Digital Asset Recovery',
-  description: 'Professional forensic recovery services for lost or stolen cryptocurrency and digital assets. Trusted worldwide with a 94% success rate.',
+  title: 'Mickydons Trace & Recovery | Scam Investigation & Asset Tracing',
+  description: 'Helping individuals and businesses investigate online fraud, trace crypto transactions and digital evidence, and understand realistic recovery options.',
 };
 
 export default function RootLayout({
@@ -14,7 +28,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${manrope.variable} ${dmSerifDisplay.variable}`}>
       <head>
         {/* Google tag (gtag.js) - AW-18141846129 */}
         <Script 
@@ -45,7 +59,7 @@ export default function RootLayout({
         
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
       </head>
       <body className="font-body antialiased selection:bg-primary/30 selection:text-primary-foreground">
         {/* Google Tag Manager (noscript) - Fallback for every page */}
@@ -73,7 +87,7 @@ export default function RootLayout({
           id="tawk-to" 
           src="https://embed.tawk.to/69dc8db265fbbc1c34b46a20/1jm2oj0sg"
           strategy="afterInteractive"
-          crossOrigin="*"
+          crossOrigin="anonymous"
         />
       </body>
     </html>

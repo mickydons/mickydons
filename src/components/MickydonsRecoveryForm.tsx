@@ -21,7 +21,8 @@ import {
   User,
   Activity,
   FileText,
-  Wallet
+  Wallet,
+  Lock
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -59,7 +60,7 @@ const funnelOptions = [
   { id: "crypto-assets", label: "Assets Recovery", icon: Zap, description: "Stolen NFTs, DeFi exploits and cross-chain asset loss." },
 ];
 
-export function AnalogRecoveryForm() {
+export function MickydonsRecoveryForm() {
   const { toast } = useToast();
   const [step, setStep] = useState(0); 
   const [isDrafting, setIsDrafting] = useState(false);
@@ -169,63 +170,69 @@ export function AnalogRecoveryForm() {
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-6xl font-headline font-bold mb-6 text-foreground">Initiate Forensic Recovery</h2>
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Submit your case to our recovery labs. Our technical team provides a secure forensic assessment within 24 hours.
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#35D6D0]/10 border border-[#35D6D0]/25 text-[#35D6D0] text-[12px] md:text-[13px] font-body font-semibold uppercase tracking-[0.12em] mb-4">
+              CASE ASSESSMENT
+            </div>
+            <h2 className="text-3xl sm:text-4xl lg:text-[46px] font-headline font-normal leading-[1.15] tracking-tight mb-4 text-[#F1F5F7]">
+              Start with <br className="hidden sm:inline" />
+              <span className="text-[#35D6D0]">what you know.</span>
+            </h2>
+            <p className="text-[#8B9AA5] text-[15px] sm:text-[17px] font-body font-normal leading-relaxed max-w-2xl mx-auto">
+              You don&apos;t need to have all the answers before you contact us. Give us the information you have, and we&apos;ll help organize the case.
             </p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
             {/* Left Column: Authority & Trust */}
             <div className="lg:col-span-4 space-y-8">
-              <div className="p-8 rounded-3xl bg-primary/5 border border-primary/20 backdrop-blur-sm glow-success">
-                <div className="flex items-center gap-3 text-primary font-bold mb-4">
-                  <ShieldCheck className="w-6 h-6" />
-                  Forensic Lab Protocol
+              <div className="p-8 rounded-3xl bg-[#111C26] border border-[#24313D] shadow-xl">
+                <div className="flex items-center gap-3 text-[#35D6D0] font-bold mb-4">
+                  <ShieldCheck className="w-6 h-6 text-[#35D6D0]" />
+                  What to Expect
                 </div>
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
-                    <div className="mt-1 w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
-                    <span className="text-sm">End-to-end encrypted communication via Swiss forensic servers.</span>
+                    <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#35D6D0] shrink-0" />
+                    <span className="text-sm text-[#F1F5F7]">End-to-end encrypted communication via secure Swiss servers.</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <div className="mt-1 w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
-                    <span className="text-sm">Institutional no-upfront fee policy for qualifying fraud cases.</span>
+                    <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#35D6D0] shrink-0" />
+                    <span className="text-sm text-[#F1F5F7]">Completely free initial review with no obligations.</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <div className="mt-1 w-1.5 h-1.5 rounded-full bg-accent shrink-0" />
-                    <span className="text-sm text-accent">Direct engagement with certified blockchain intelligence experts.</span>
+                    <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#C6A96B] shrink-0" />
+                    <span className="text-sm text-[#C6A96B] font-medium">Direct review by experienced blockchain investigators.</span>
                   </li>
                 </ul>
               </div>
 
-              <div className="p-6 rounded-2xl bg-white/5 border border-white/10">
-                <h3 className="font-bold text-lg mb-4">Official Laboratory Intake</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed mb-4">
-                  All data is isolated and encrypted until reviewed by a lead analyst. This secure portal is the mandated method for initiating a recovery file.
+              <div className="p-6 rounded-2xl bg-[#0C131B] border border-[#24313D]">
+                <h3 className="font-bold text-lg mb-3 text-[#F1F5F7]">Confidential Case Assessment</h3>
+                <p className="text-sm text-[#8B9AA5] leading-relaxed mb-4">
+                  All details you share are treated with strict confidentiality. An investigator will review the information provided to identify any actionable digital trail.
                 </p>
-                <div className="flex items-center gap-2 text-xs font-bold text-accent">
-                  <Activity className="w-4 h-4" />
-                  ISO 27001 Certified Infrastructure
+                <div className="flex items-center gap-2 text-xs font-bold text-[#35D6D0]">
+                  <Activity className="w-4 h-4 text-[#35D6D0]" />
+                  Encrypted &amp; Access-Controlled
                 </div>
               </div>
             </div>
 
-            {/* Right Column: Funnel Form - Action Focus (Blue) */}
+            {/* Right Column: Funnel Form */}
             <div className="lg:col-span-8">
-              <div className="p-8 rounded-3xl bg-card border border-white/10 shadow-2xl relative overflow-hidden card-hover">
+              <div className="p-8 rounded-3xl bg-[#111C26] border border-[#24313D] shadow-2xl relative overflow-hidden">
                 <div className="mb-8">
                   <div className="flex justify-between items-end mb-2">
-                    <span className="text-xs font-bold text-primary uppercase tracking-wider">{stepLabel}</span>
-                    <span className="text-xs text-muted-foreground">{Math.round(progress)}% Complete</span>
+                    <span className="text-xs font-bold text-[#35D6D0] uppercase tracking-wider">{stepLabel}</span>
+                    <span className="text-xs text-[#8B9AA5]">{Math.round(progress)}% Complete</span>
                   </div>
-                  <Progress value={progress} className="h-1.5 bg-white/5" />
+                  <Progress value={progress} className="h-1.5 bg-[#0C131B]" />
                 </div>
 
                 {step === 0 && (
                   <div className="animate-in fade-in slide-in-from-right-4 duration-500">
-                    <h3 className="text-2xl font-headline font-bold mb-2">Case Categorization</h3>
-                    <p className="text-muted-foreground mb-8 text-sm">Select the technical category that best describes your loss situation.</p>
+                    <h3 className="text-2xl font-headline font-bold mb-2 text-[#F1F5F7]">Case Categorization</h3>
+                    <p className="text-[#8B9AA5] mb-8 text-sm">Select the technical category that best describes your loss situation.</p>
                     
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       {funnelOptions.map((opt) => (
@@ -233,14 +240,14 @@ export function AnalogRecoveryForm() {
                           key={opt.id}
                           type="button"
                           onClick={() => handleSelectType(opt.id)}
-                          className="flex flex-col items-start p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-accent/50 hover:bg-accent/5 transition-all group text-left"
+                          className="flex flex-col items-start p-6 rounded-2xl bg-[#0C131B] border border-[#24313D] hover:border-[#35D6D0]/60 hover:bg-[#0C131B]/80 transition-all group text-left"
                         >
-                          <div className="p-3 rounded-xl bg-accent/10 text-accent mb-4 group-hover:scale-110 group-hover:bg-accent group-hover:text-background transition-all duration-300">
+                          <div className="p-3 rounded-xl bg-[#35D6D0]/10 text-[#35D6D0] mb-4 group-hover:scale-110 group-hover:bg-[#35D6D0] group-hover:text-[#06090D] transition-all duration-300">
                             <opt.icon className="w-6 h-6" />
                           </div>
-                          <div className="font-bold mb-1">{opt.label}</div>
-                          <div className="text-xs text-muted-foreground leading-relaxed line-clamp-2">{opt.description}</div>
-                          <div className="mt-4 text-xs font-bold text-accent flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                          <div className="font-bold mb-1 text-[#F1F5F7]">{opt.label}</div>
+                          <div className="text-xs text-[#8B9AA5] leading-relaxed line-clamp-2">{opt.description}</div>
+                          <div className="mt-4 text-xs font-bold text-[#35D6D0] flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
                             Categorize <ChevronRight className="w-3 h-3" />
                           </div>
                         </button>
@@ -254,12 +261,12 @@ export function AnalogRecoveryForm() {
                     <button 
                       type="button"
                       onClick={() => setStep(0)}
-                      className="flex items-center gap-2 text-sm text-muted-foreground hover:text-accent mb-6 transition-colors"
+                      className="flex items-center gap-2 text-sm text-[#8B9AA5] hover:text-[#35D6D0] mb-6 transition-colors"
                     >
                       <ArrowLeft className="w-4 h-4" /> Back to Categorization
                     </button>
                     
-                    <h3 className="text-2xl font-headline font-bold mb-6">Valuation Analysis</h3>
+                    <h3 className="text-2xl font-headline font-bold mb-6 text-[#F1F5F7]">Valuation Analysis</h3>
                     
                     <Form {...form}>
                       <div className="space-y-8">
@@ -268,22 +275,22 @@ export function AnalogRecoveryForm() {
                           name="estimatedValue"
                           render={({ field }) => (
                             <FormItem>
-                              <FormLabel className="text-lg font-semibold flex items-center gap-2">
-                                <TrendingUp className="w-5 h-5 text-accent" />
-                                Market Value for Reclamation (USD)
+                              <FormLabel className="text-lg font-semibold flex items-center gap-2 text-[#F1F5F7]">
+                                <TrendingUp className="w-5 h-5 text-[#35D6D0]" />
+                                Estimated Amount Lost (USD)
                               </FormLabel>
                               <FormControl>
                                 <div className="relative">
-                                  <span className="absolute left-4 top-1/2 -translate-y-1/2 text-muted-foreground font-bold font-mono">$</span>
-                                  <Input placeholder="e.g. 50,000" className="h-16 pl-8 text-2xl font-bold font-mono bg-background/50 border-white/10 focus:border-accent/50" {...field} />
+                                  <span className="absolute left-4 top-1/2 -translate-y-1/2 text-[#8B9AA5] font-bold font-mono">$</span>
+                                  <Input placeholder="e.g. 50,000" className="h-16 pl-8 text-2xl font-bold font-mono bg-[#0C131B] border-[#24313D] text-[#F1F5F7] focus:border-[#35D6D0]" {...field} />
                                 </div>
                               </FormControl>
                               <FormMessage />
                             </FormItem>
                           )}
                         />
-                        <Button onClick={handleNextToFinal} className="w-full h-16 text-lg font-bold btn-glow-action bg-primary hover:bg-primary/90 transition-all hover:scale-105">
-                          Proceed to Technical Details <ChevronRight className="ml-2 w-5 h-5" />
+                        <Button onClick={handleNextToFinal} className="w-full h-16 text-base md:text-lg font-bold bg-[#35D6D0] text-[#06090D] hover:bg-[#8AF2E9] shadow-xl shadow-[#35D6D0]/25 rounded-xl transition-all hover:scale-[1.01] border border-[#8AF2E9]/40">
+                          Continue to Case Details <ChevronRight className="ml-2 w-5 h-5" />
                         </Button>
                       </div>
                     </Form>
@@ -295,12 +302,12 @@ export function AnalogRecoveryForm() {
                     <button 
                       type="button"
                       onClick={() => setStep(1)}
-                      className="flex items-center gap-2 text-sm text-muted-foreground hover:text-accent mb-6 transition-colors"
+                      className="flex items-center gap-2 text-sm text-[#8B9AA5] hover:text-[#35D6D0] mb-6 transition-colors font-body"
                     >
-                      <ArrowLeft className="w-4 h-4" /> Back to Valuation
+                      <ArrowLeft className="w-4 h-4" /> Back to Amount
                     </button>
                     
-                    <h3 className="text-2xl font-headline font-bold mb-6">Identity & Forensic Summary</h3>
+                    <h3 className="text-2xl font-headline font-bold mb-6 text-[#F1F5F7]">Contact & Case Details</h3>
                     
                     <Form {...form}>
                       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
@@ -310,11 +317,11 @@ export function AnalogRecoveryForm() {
                             name="fullName"
                             render={({ field }) => (
                               <FormItem>
-                                <FormLabel className="flex items-center gap-2">
-                                  <User className="w-4 h-4 text-accent" /> Full Name
+                                <FormLabel className="flex items-center gap-2 text-[#F1F5F7]">
+                                  <User className="w-4 h-4 text-[#35D6D0]" /> Full Name
                                 </FormLabel>
                                 <FormControl>
-                                  <Input placeholder="John Doe" {...field} className="bg-background/50" />
+                                  <Input placeholder="John Doe" {...field} className="bg-[#0C131B] border-[#24313D] text-[#F1F5F7] focus:border-[#35D6D0]" />
                                 </FormControl>
                                 <FormMessage />
                               </FormItem>
@@ -325,11 +332,11 @@ export function AnalogRecoveryForm() {
                             name="email"
                             render={({ field }) => (
                               <FormItem>
-                                <FormLabel className="flex items-center gap-2">
-                                  <Mail className="w-4 h-4 text-accent" /> Official Email
+                                <FormLabel className="flex items-center gap-2 text-[#F1F5F7]">
+                                  <Mail className="w-4 h-4 text-[#35D6D0]" /> Email Address
                                 </FormLabel>
                                 <FormControl>
-                                  <Input placeholder="john@example.com" {...field} className="bg-background/50" />
+                                  <Input placeholder="john@example.com" {...field} className="bg-[#0C131B] border-[#24313D] text-[#F1F5F7] focus:border-[#35D6D0]" />
                                 </FormControl>
                                 <FormMessage />
                               </FormItem>
@@ -342,11 +349,11 @@ export function AnalogRecoveryForm() {
                           name="phone"
                           render={({ field }) => (
                             <FormItem>
-                              <FormLabel className="flex items-center gap-2">
-                                <Phone className="w-4 h-4 text-accent" /> Secure Phone Number
+                              <FormLabel className="flex items-center gap-2 text-[#F1F5F7]">
+                                <Phone className="w-4 h-4 text-[#35D6D0]" /> Phone Number
                               </FormLabel>
                               <FormControl>
-                                <Input placeholder="+1..." {...field} className="bg-background/50" />
+                                <Input placeholder="+1..." {...field} className="bg-[#0C131B] border-[#24313D] text-[#F1F5F7] focus:border-[#35D6D0]" />
                               </FormControl>
                               <FormMessage />
                             </FormItem>
@@ -359,23 +366,23 @@ export function AnalogRecoveryForm() {
                           render={({ field }) => (
                             <FormItem>
                               <div className="flex items-center justify-between">
-                                <FormLabel>Technical Case Description</FormLabel>
+                                <FormLabel className="text-[#F1F5F7]">Tell Us What Happened</FormLabel>
                                 <Button 
                                   type="button" 
                                   variant="ghost" 
                                   size="sm" 
-                                  className="h-8 text-accent gap-1.5 px-2 hover:bg-accent/10 glow-intelligence"
+                                  className="h-8 text-[#35D6D0] gap-1.5 px-2 hover:bg-[#35D6D0]/10 hover:text-[#8AF2E9]"
                                   onClick={handleAIDraft}
                                   disabled={isDrafting}
                                 >
-                                  {isDrafting ? <Loader2 className="w-3 h-3 animate-spin" /> : <Sparkles className="w-3 h-3" />}
-                                  Forensic AI Optimization
+                                  {isDrafting ? <Loader2 className="w-3 h-3 animate-spin" /> : <Sparkles className="w-3 h-3 text-[#35D6D0]" />}
+                                  AI Description Assistant
                                 </Button>
                               </div>
                               <FormControl>
                                 <Textarea 
-                                  placeholder="Detail the events leading to the loss. Include transaction IDs (TXIDs) if available for tracing." 
-                                  className="min-h-[140px] bg-background/50"
+                                  placeholder="Explain what platform, broker, or individual you interacted with, and what occurred. Include transaction hashes (TXIDs) or website links if available." 
+                                  className="min-h-[140px] bg-[#0C131B] border-[#24313D] text-[#F1F5F7] focus:border-[#35D6D0]"
                                   {...field} 
                                 />
                               </FormControl>
@@ -386,15 +393,19 @@ export function AnalogRecoveryForm() {
 
                         <Button 
                           type="submit" 
-                          className="w-full h-16 text-lg font-bold btn-glow-action bg-primary hover:bg-primary/90 transition-all hover:scale-105"
+                          className="w-full h-16 font-body text-[13px] sm:text-[14px] font-bold tracking-wide uppercase bg-[#35D6D0] text-[#06090D] hover:bg-[#8AF2E9] shadow-xl shadow-[#35D6D0]/25 rounded-xl transition-all hover:scale-[1.01] border border-[#8AF2E9]/40"
                           disabled={isSubmitting}
                         >
                           {isSubmitting ? (
-                            <>Transmitting to Lab... <Loader2 className="ml-2 w-5 h-5 animate-spin" /></>
+                            <>Submitting Case Details... <Loader2 className="ml-2 w-5 h-5 animate-spin" /></>
                           ) : (
-                            <>Initiate Recovery File <Send className="ml-2 w-5 h-5" /></>
+                            <>Submit Case for Initial Review <Send className="ml-2 w-4 h-4" /></>
                           )}
                         </Button>
+                        <div className="flex items-center justify-center gap-2 mt-4 text-xs text-[#8B9AA5]">
+                          <Lock className="w-3.5 h-3.5 text-[#35D6D0]" />
+                          <span>Your information is treated confidentially.</span>
+                        </div>
                       </form>
                     </Form>
                   </div>

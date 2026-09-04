@@ -1,37 +1,39 @@
-import { AnalogNavbar } from "@/components/AnalogNavbar";
-import { AnalogHero } from "@/components/AnalogHero";
-import { AnalogHealProofLayer } from "@/components/AnalogHealProofLayer";
-import { AnalogServices } from "@/components/AnalogServices";
-import { AnalogHealMethodology } from "@/components/AnalogHealMethodology";
-import { AnalogSteps } from "@/components/AnalogSteps";
-import { AnalogHealGuarantee } from "@/components/AnalogHealGuarantee";
-import { AnalogTrustStrip } from "@/components/AnalogTrustStrip";
-import { AnalogRecoveryForm } from "@/components/AnalogRecoveryForm";
-import { AnalogTestimonials } from "@/components/AnalogTestimonials";
-import { AnalogKnowledgeHub } from "@/components/AnalogKnowledgeHub";
-import { AnalogContact } from "@/components/AnalogContact";
-import { AnalogFooter } from "@/components/AnalogFooter";
-import { AnalogStickyCTA } from "@/components/AnalogStickyCTA";
+import { MickydonsNavbar } from "@/components/MickydonsNavbar";
+import { MickydonsHero } from "@/components/MickydonsHero";
+import { MickydonsProofLayer } from "@/components/MickydonsProofLayer";
+import { MickydonsServices } from "@/components/MickydonsServices";
+import { MickydonsScamCheck } from "@/components/MickydonsScamCheck";
+import { MickydonsMethodology } from "@/components/MickydonsMethodology";
+import { MickydonsSteps } from "@/components/MickydonsSteps";
+import { MickydonsGuarantee } from "@/components/MickydonsGuarantee";
+import { MickydonsTrustStrip } from "@/components/MickydonsTrustStrip";
+import { MickydonsRecoveryForm } from "@/components/MickydonsRecoveryForm";
+import { MickydonsTestimonials } from "@/components/MickydonsTestimonials";
+import { MickydonsKnowledgeHub } from "@/components/MickydonsKnowledgeHub";
+import { MickydonsContact } from "@/components/MickydonsContact";
+import { MickydonsFooter } from "@/components/MickydonsFooter";
+import { MickydonsStickyCTA } from "@/components/MickydonsStickyCTA";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-background">
-      <AnalogNavbar />
+      <MickydonsNavbar />
       <main>
-        <AnalogHero />
-        <AnalogHealProofLayer />
-        <AnalogServices />
-        <AnalogHealMethodology />
-        <AnalogSteps />
-        <AnalogHealGuarantee />
-        <AnalogTrustStrip />
-        <AnalogRecoveryForm />
-        <AnalogTestimonials />
-        <AnalogKnowledgeHub />
-        <AnalogContact />
+        <MickydonsHero />
+        <MickydonsProofLayer />
+        <MickydonsServices />
+        <MickydonsScamCheck />
+        <MickydonsMethodology />
+        <MickydonsSteps />
+        <MickydonsGuarantee />
+        <MickydonsTrustStrip />
+        <MickydonsRecoveryForm />
+        <MickydonsTestimonials />
+        <MickydonsKnowledgeHub />
+        <MickydonsContact />
       </main>
-      <AnalogFooter />
-      <AnalogStickyCTA />
+      <MickydonsFooter />
+      <MickydonsStickyCTA />
     </div>
   );
 }

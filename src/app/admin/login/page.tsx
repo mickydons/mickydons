@@ -80,14 +80,14 @@ export default function AdminLoginPage() {
           <div className="inline-flex p-3 rounded-2xl bg-primary/10 border border-primary/20 mb-4">
             {logoUrl ? (
               <div className="relative w-12 h-12">
-                <Image src={logoUrl} alt="Logo" fill className="object-contain" />
+                <Image src={logoUrl} alt="Logo" fill className="object-contain" unoptimized={true} />
               </div>
             ) : (
               <Shield className="w-10 h-10 text-primary" />
             )}
           </div>
           <h1 className="text-3xl font-headline font-bold text-foreground">
-            Analog<span className="text-primary">Heal</span> <span className="text-muted-foreground">Forensics</span>
+            Mickydons<span className="text-primary">Forensics</span> <span className="text-muted-foreground">Forensics</span>
           </h1>
           <p className="text-sm text-muted-foreground uppercase tracking-widest font-bold">
             Laboratory Admin Terminal
@@ -108,7 +108,7 @@ export default function AdminLoginPage() {
                   <Mail className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
                   <Input
                     type="email"
-                    placeholder="analyst@analogheal.com"
+                    placeholder="analyst@mickydons.com"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     className="pl-10 bg-background/50 border-white/10"

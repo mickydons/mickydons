@@ -109,7 +109,7 @@ export function AegisRecoveryForm() {
       form.setValue("message", result.draftedMessage);
       toast({
         title: "AI Draft Complete",
-        description: "Your message has been enhanced for our AnalogHeal agents.",
+        description: "Your message has been enhanced for our Mickydons agents.",
       });
     } catch (error) {
       toast({
@@ -149,7 +149,7 @@ export function AegisRecoveryForm() {
               <div className="p-8 rounded-3xl bg-primary/5 border border-primary/20 backdrop-blur-sm glow-confirmation">
                 <div className="flex items-center gap-3 text-primary font-bold mb-4">
                   <ShieldCheck className="w-6 h-6 shadow-[0_0_8px_rgba(59,130,246,0.5)]" />
-                  AnalogHeal Security Protocol
+                  Mickydons Security Protocol
                 </div>
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
@@ -184,7 +184,7 @@ export function AegisRecoveryForm() {
                   </div>
                   <div>
                     <div className="font-semibold">Telegram Verified Bot</div>
-                    <div className="text-xs text-muted-foreground">@AnalogHealSupport</div>
+                    <div className="text-xs text-muted-foreground">@MickydonsSupport</div>
                   </div>
                 </div>
               </div>
@@ -374,7 +374,7 @@ export function AegisRecoveryForm() {
                         
                         <div className="flex items-center justify-center gap-2 text-[10px] text-muted-foreground uppercase tracking-widest font-bold opacity-60 glow-confirmation py-1 rounded-full">
                           <ShieldCheck className="w-3 h-3 text-green-500 shadow-[0_0_5px_rgba(34,197,94,0.5)]" />
-                          Encrypted Submission Secured by AnalogHeal
+                          Encrypted Submission Secured by Mickydons
                         </div>
                       </form>
                     </Form>

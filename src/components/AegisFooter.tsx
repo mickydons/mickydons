@@ -44,7 +44,7 @@ export function AegisFooter() {
             <Link href="/" className="flex items-center gap-2 group">
               <Shield className="w-8 h-8 text-primary" />
               <span className="font-headline text-2xl font-bold">
-                Analog<span className="text-primary">Heal</span>
+                Mickydons<span className="text-primary">Forensics</span>
               </span>
             </Link>
             <p className="text-muted-foreground leading-relaxed">
@@ -57,7 +57,7 @@ export function AegisFooter() {
               </div>
               <div className="flex items-start gap-3 text-sm text-muted-foreground">
                 <Building className="w-4 h-4 text-primary shrink-0 mt-0.5" />
-                <span>AnalogHeal Systems Ltd. | Reg #HE-45293-C1</span>
+                <span>Mickydons Systems Ltd. | Reg #HE-45293-C1</span>
               </div>
             </div>
             <div className="flex gap-4">
@@ -114,7 +114,7 @@ export function AegisFooter() {
         </div>
 
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
-          <div>© 2020-{mounted ? year : '...'} AnalogHeal Recovery Systems. All rights reserved.</div>
+          <div>© 2020-{mounted ? year : '...'} Mickydons Recovery Systems. All rights reserved.</div>
           <div className="flex gap-6">
             <span>Certifications:</span>
             <span className="font-bold text-foreground/50">ISO 27001</span>

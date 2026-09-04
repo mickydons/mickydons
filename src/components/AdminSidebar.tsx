@@ -78,12 +78,12 @@ export function AdminSidebar({ userEmail }: { userEmail?: string }) {
         <Link href="/admin/dashboard" className="flex items-center gap-3 mb-2" onClick={() => setIsOpen(false)}>
           {logoUrl ? (
             <div className="relative w-8 h-8 rounded bg-primary/10 overflow-hidden">
-              <Image src={logoUrl} alt="Logo" fill className="object-contain p-1" />
+              <Image src={logoUrl} alt="Logo" fill className="object-contain p-1" unoptimized={true} />
             </div>
           ) : (
             <Shield className="w-6 h-6 text-primary" />
           )}
-          <span className="font-headline font-bold text-lg">AnalogHeal</span>
+          <span className="font-headline font-bold text-lg">Mickydons</span>
         </Link>
         <div className="text-[10px] font-bold text-muted-foreground uppercase tracking-widest">
           Forensic Command
