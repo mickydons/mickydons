@@ -178,14 +178,18 @@ export function MickydonsFooter() {
             <p className="text-[#8B9AA5] font-body text-sm leading-relaxed max-w-sm">
               Helping individuals and businesses investigate online fraud, trace digital evidence and understand their recovery options.
             </p>
-            <div className="space-y-2 pt-2">
+            <div className="space-y-2.5 pt-2">
               <div className="flex items-start gap-2.5 text-xs text-[#8B9AA5]">
                 <MapPin className="w-4 h-4 text-[#35D6D0] shrink-0 mt-0.5" />
-                <span>1201 Financial Centre, Zürich, CH-8001</span>
+                <span className="leading-relaxed">
+                  <strong className="text-[#F1F5F7] font-semibold block">Tülay Demirkiran</strong>
+                  Ahmet Muhip Dranas Caddesi 56<br />
+                  57000 Sinop, Turkey
+                </span>
               </div>
               <div className="flex items-start gap-2.5 text-xs text-[#8B9AA5]">
                 <Building className="w-4 h-4 text-[#35D6D0] shrink-0 mt-0.5" />
-                <span>Mickydons Trace &amp; Recovery Ltd. | Reg #HE-45293-C1</span>
+                <span>Mickydons Trace &amp; Recovery</span>
               </div>
             </div>
             <div className="flex gap-3 pt-2">

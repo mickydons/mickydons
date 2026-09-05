@@ -53,11 +53,15 @@ export function AegisFooter() {
             <div className="space-y-3">
               <div className="flex items-start gap-3 text-sm text-muted-foreground">
                 <MapPin className="w-4 h-4 text-primary shrink-0 mt-0.5" />
-                <span>1201 Digital Forensics Tower, Zürich, CH-8001</span>
+                <span>
+                  <strong className="text-foreground block font-medium">Tülay Demirkiran</strong>
+                  Ahmet Muhip Dranas Caddesi 56<br />
+                  57000 Sinop, Turkey
+                </span>
               </div>
               <div className="flex items-start gap-3 text-sm text-muted-foreground">
                 <Building className="w-4 h-4 text-primary shrink-0 mt-0.5" />
-                <span>Mickydons Systems Ltd. | Reg #HE-45293-C1</span>
+                <span>Mickydons Trace &amp; Recovery</span>
               </div>
             </div>
             <div className="flex gap-4">

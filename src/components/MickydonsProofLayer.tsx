@@ -120,16 +120,17 @@ export function MickydonsProofLayer() {
                   <Globe className="w-5 h-5 text-[#35D6D0]" />
                 </div>
                 <div>
-                  <div className="text-sm font-bold uppercase tracking-wider mb-1 text-[#F1F5F7]">Investigation HQ</div>
+                  <div className="text-sm font-bold uppercase tracking-wider mb-1 text-[#F1F5F7]">Registered Brand Office</div>
                   <div className="text-[#8B9AA5] text-sm leading-relaxed">
-                    1201 Financial Centre<br />
-                    Zürich, Switzerland, 8001
+                    <strong className="text-[#F1F5F7] font-medium block">Tülay Demirkiran</strong>
+                    Ahmet Muhip Dranas Caddesi 56<br />
+                    57000 Sinop, Turkey
                   </div>
                 </div>
               </div>
               <div className="pt-6 border-t border-[#24313D]">
                 <p className="text-xs text-[#8B9AA5] leading-relaxed italic">
-                  *Mickydons Trace &amp; Recovery operates under strict Swiss digital privacy laws and adheres to international digital asset tracing standards.
+                  *Mickydons Trace &amp; Recovery operates under strict digital privacy regulations and adheres to international digital asset tracing standards.
                 </p>
               </div>
             </div>

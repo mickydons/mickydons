@@ -1,4 +1,4 @@
-import { Mail, Clock, CheckCircle2 } from "lucide-react";
+import { Mail, Clock, CheckCircle2, MapPin } from "lucide-react";
 
 const benefits = [
   "Free, confidential initial case assessment",
@@ -42,6 +42,19 @@ export function MickydonsContact() {
                 <div>
                   <div className="text-xs font-body font-bold text-[#8B9AA5] uppercase tracking-wider">Operational Response</div>
                   <div className="text-base sm:text-lg font-body font-semibold text-[#F1F5F7]">24/7 Rapid File Review</div>
+                </div>
+              </div>
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-2xl bg-[#35D6D0]/10 border border-[#35D6D0]/20 flex items-center justify-center text-[#35D6D0] shrink-0">
+                  <MapPin className="w-6 h-6" />
+                </div>
+                <div>
+                  <div className="text-xs font-body font-bold text-[#8B9AA5] uppercase tracking-wider">Registered Brand Office</div>
+                  <div className="text-sm sm:text-base font-body font-semibold text-[#F1F5F7] leading-relaxed">
+                    <span className="block text-[#F1F5F7]">Tülay Demirkiran</span>
+                    Ahmet Muhip Dranas Caddesi 56<br />
+                    57000 Sinop, Turkey
+                  </div>
                 </div>
               </div>
             </div>
