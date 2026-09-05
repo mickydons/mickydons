@@ -62,83 +62,33 @@ const TechnicalRenderer = ({ text }: { text: string }) => {
   );
 };
 
-const defaultGuides = [
-  {
-    id: "guide-1",
-    title: "I Lost Crypto to a Scam. What Should I Do First?",
-    category: "Emergency Action",
-    description: "Crucial first-response steps to prevent further wallet compromises and secure the digital evidence before transaction trails fade.",
-    image_url: "https://picsum.photos/seed/mkguide1/600/400",
-    readTime: "4 min read",
-    content: `**Immediate Actions (First 24 Hours)**\n\nWhen cryptocurrency is sent to an unauthorized or fraudulent address, speed is vital. The first response must prioritize containment:\n\n1. **Revoke Token Approvals Immediately**: If you signed a malicious smart contract approval, disconnect your wallet from all decentralized applications using revoking tools or move any remaining uncompromised assets to a newly generated cold wallet.\n\n2. **Preserve Exact Transaction Hashes (TXIDs)**: Copy the transaction hashes, sending addresses, and receiving addresses directly from the blockchain explorer (Etherscan, BscScan, etc.). Do not rely solely on screenshot views.\n\n3. **Cease All Contact with the Scammer**: Do not alert the scammer that you suspect fraud while you are archiving chat logs. Any sudden confrontation may cause them to delete messaging channels or burner websites.\n\n4. **Never Pay "Withdrawal Fees" or "Taxes"**: Scammers will insist that paying a final 10%–20% fee will release your locked balance. This is an advance-fee trap; no funds will be released.`,
-  },
-  {
-    id: "guide-2",
-    title: "How to Tell if an Investment Platform Is Fake",
-    category: "Fraud Detection",
-    description: "Key red flags that expose fabricated trading dashboards, simulated account balances, and unbonded offshore entities.",
-    image_url: "https://picsum.photos/seed/mkguide2/600/400",
-    readTime: "5 min read",
-    content: `**Understanding Simulated Trading Platforms**\n\nMany investment scams create convincing web platforms displaying live charts, growing balances, and trading logs. In reality, no actual trading occurs—the numbers are manually controlled by the fraudsters.\n\n**Common Red Flags:**\n\n- **Guaranteed Returns**: Legitimate financial investments never guarantee fixed daily or weekly yields (e.g. "2% daily ROI").\n- **Recently Registered Domain**: Fraudulent platforms frequently cycle domains every 60–90 days. A WHOIS lookup showing a domain registered only months ago claiming decades of history is a major alert.\n- **Fake Regulatory Licenses**: Scammers paste forged certificates from regulatory bodies like the FCA, FINMA, or SEC, often using stolen corporate numbers from real firms.\n- **Blocked Withdrawals**: When you attempt to withdraw profits, the platform demands extra payments for "liquidity verification," "anti-money laundering fees," or "capital gains tax."`,
-  },
-  {
-    id: "guide-3",
-    title: "Someone Online Asked Me for Money. Could It Be a Romance Scam?",
-    category: "Social Engineering",
-    description: "Understanding relationship-based financial fraud (pig butchering) and why emotional manipulation precedes the financial trap.",
-    image_url: "https://picsum.photos/seed/mkguide3/600/400",
-    readTime: "6 min read",
-    content: `**The Mechanics of 'Pig Butchering' (Sha Zhu Pan)**\n\nRomance and relationship scams rarely ask for money right away. Fraudsters invest weeks or months building trust, affection, and emotional intimacy.\n\n**How the Trap Develops:**\n\n1. **The 'Wrong Number' or Dating App Introduction**: The fraudster appears friendly, wealthy, and charismatic, quickly steering the conversation to encrypted messaging apps like WhatsApp or Telegram.\n2. **The Passive Flex**: They casually mention their financial success, attributing it to an uncle, mentor, or proprietary trading bot with "inside knowledge."\n3. **The Small Test Deposit**: They invite you to test a platform with $500 or $1,000, allowing you to withdraw a small profit to make the platform feel legitimate.\n4. **The Major Loss**: Once you invest significant savings or take out loans, the platform freezes, the mentors disappear, and demands for unlock fees begin.\n\n**Key Rule**: If someone you have never met in person advises you to invest in cryptocurrency, it is almost certainly a scam.`,
-  },
-  {
-    id: "guide-4",
-    title: "Can Stolen Cryptocurrency Be Traced?",
-    category: "Digital Forensics",
-    description: "How blockchain ledgers record every transaction hop, and why mixers and privacy tools do not provide total anonymity.",
-    image_url: "https://picsum.photos/seed/mkguide4/600/400",
-    readTime: "4 min read",
-    content: `**Public Ledgers vs. Anonymity Myth**\n\nOne of the most persistent misconceptions about cryptocurrency is that it is completely anonymous. In truth, major blockchains (Bitcoin, Ethereum, Tron, Solana) are **pseudonymous, immutable public ledgers**.\n\n**How Tracing Works:**\n\n- **Every Hop Is Permanent**: When a scammer moves funds through 5, 10, or 20 intermediary wallets to obscure the trail, every single transaction hash is permanently logged on-chain.\n- **Clustering Heuristics**: Forensic analysis connects disparate wallet addresses by examining transaction patterns, fee inputs, and shared spending behavior.\n- **Centralized Exchange Off-Ramps**: Scammers cannot spend raw cryptocurrency in the real world indefinitely; they must deposit to centralized exchanges (CEXs) that enforce Know-Your-Customer (KYC) identity verification.\n- **Attribution**: Once a deposit address is identified at an exchange, official legal subpoenas can link the digital trail to real-world identities, IP addresses, and bank accounts.`,
-  },
-  {
-    id: "guide-5",
-    title: "What Evidence Should I Save After a Scam?",
-    category: "Evidence Preservation",
-    description: "A complete checklist of records, TXIDs, wire receipts, platform URLs, and chat logs required for legal and police reports.",
-    image_url: "https://picsum.photos/seed/mkguide5/600/400",
-    readTime: "3 min read",
-    content: `**Building an Actionable Evidence File**\n\nWhen reporting fraud to police agencies, banks, or blockchain intelligence teams, the quality and structure of your evidence determines the speed of response:\n\n**Essential Evidence Checklist:**\n\n- **Transaction Records**: Export CSV logs and record the exact TXID (hash), date/time, sending wallet, and destination wallet for every outgoing transfer.\n- **Complete Unedited Chat Logs**: Export full chat exports from WhatsApp, Telegram, or email with visible timestamps, profile IDs, and phone numbers. Do not delete any conversation threads.\n- **Platform URLs & Account Screenshots**: Save the exact web addresses of the fraudulent platforms, account dashboards showing deposited balances, and deposit instructions.\n- **Bank & Wire Receipts**: Document fiat-to-crypto on-ramps (e.g., transfers to Coinbase, Kraken, or Binance) with bank statement references.\n- **Save in Original Quality**: Do not crop screenshots; preserve full browser bars and phone notification trays where possible.`,
-  },
-  {
-    id: "guide-6",
-    title: "I Paid a Recovery Company Already. Could That Be Another Scam?",
-    category: "Secondary Fraud Alert",
-    description: "Warning signs of secondary recovery scams that specifically prey on previous fraud victims with fake recovery promises.",
-    image_url: "https://picsum.photos/seed/mkguide6/600/400",
-    readTime: "5 min read",
-    content: `**The Danger of Recovery Room Fraud**\n\nVictims who have lost funds online are frequently placed on 'sucker lists' and targeted by secondary recovery scammers. These fraudsters often pose as ethical hackers, international recovery lawyers, or government task forces claiming they have already seized your funds.\n\n**How to Spot a Secondary Recovery Scam:**\n\n- **Unsolicited Contact**: Someone contacts you on Telegram, Instagram, or email claiming they saw your post or tracked your stolen funds without you contacting them.\n- **Guaranteed Money Back**: They guarantee that 100% of your funds can be 'hacked back' or reversed from the blockchain. No legitimate entity can alter blockchain history.\n- **Demands for Upfront Crypto Fees**: They ask you to pay an 'activation code,' 'tax fee,' or 'server deposit' before releasing your supposed recovered funds.\n- **Impersonating Regulatory Officials**: They send official-looking PDF certificates bearing FBI, Interpol, or FCA seals demanding payment.\n\n**Mickydons Standard**: We never guarantee recovery, never charge fees to 'unlock' recovered funds, and never conduct unsolicited outreach on social media.`,
-  },
-];
+const getReadTime = (post: any) => {
+  if (post?.readTime) return post.readTime;
+  if (!post?.content) return "4 min read";
+  const words = post.content.trim().split(/\s+/).length;
+  return `${Math.max(1, Math.ceil(words / 200))} min read`;
+};
 
 export function MickydonsKnowledgeHub() {
   const [question, setQuestion] = useState("");
   const [aiAnswer, setAiAnswer] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [isPostsLoading, setIsPostsLoading] = useState(true);
-  const [posts, setPosts] = useState<any[]>(defaultGuides);
+  const [posts, setPosts] = useState<any[]>([]);
   const [selectedPost, setSelectedPost] = useState<any | null>(null);
 
   useEffect(() => {
     const fetchPosts = async () => {
+      setIsPostsLoading(true);
       const { data, error } = await supabase
         .from("articles")
         .select("*")
         .order("created_at", { ascending: false });
       
-      if (!error && data && data.length > 0) {
-        // Merge or set posts
-        setPosts([...defaultGuides, ...data]);
+      if (!error && data) {
+        setPosts(data);
       } else {
-        setPosts(defaultGuides);
+        setPosts([]);
       }
       setIsPostsLoading(false);
     };
@@ -208,10 +158,18 @@ export function MickydonsKnowledgeHub() {
           <div className="flex items-center justify-center py-20">
             <Loader2 className="w-8 h-8 text-[#35D6D0] animate-spin" />
           </div>
+        ) : posts.length === 0 ? (
+          <div className="text-center py-16 px-4 border border-[#24313D] rounded-2xl bg-[#111C26]/50 mb-16">
+            <BookOpen className="w-10 h-10 text-[#35D6D0] mx-auto mb-3 opacity-60" />
+            <h3 className="text-lg font-headline font-semibold text-[#F1F5F7] mb-1">No guides published yet</h3>
+            <p className="text-sm text-[#8B9AA5] max-w-md mx-auto">
+              Our case specialists publish regular fraud breakdowns and recovery guides. Check back soon or submit a case assessment directly.
+            </p>
+          </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
             {posts.map((post) => {
-              const isAlert = post.category === "Secondary Fraud Alert";
+              const isAlert = post.category === "Secondary Fraud Alert" || post.category === "Fraud Alert";
               return (
                 <Card 
                   key={post.id} 
@@ -223,12 +181,19 @@ export function MickydonsKnowledgeHub() {
                   onClick={() => setSelectedPost(post)}
                 >
                   <div className="relative aspect-video overflow-hidden bg-[#0C131B]">
-                    <Image
-                      src={post.image_url}
-                      alt={post.title}
-                      fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-500"
-                    />
+                    {post.image_url ? (
+                      <Image
+                        src={post.image_url}
+                        alt={post.title}
+                        fill
+                        unoptimized={true}
+                        className="object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                    ) : (
+                      <div className="w-full h-full flex items-center justify-center bg-[#0C131B] text-[#35D6D0]/40">
+                        <BookOpen className="w-12 h-12" />
+                      </div>
+                    )}
                     <div className={`absolute top-4 left-4 px-3 py-1 rounded-full text-[11px] font-body font-bold uppercase tracking-wider ${
                       isAlert 
                         ? "bg-[#EF4444] text-[#F1F5F7]" 
@@ -249,7 +214,7 @@ export function MickydonsKnowledgeHub() {
                       </p>
                     </div>
                     <div className="flex items-center justify-between pt-4 border-t border-[#24313D]/60">
-                      <span className="text-xs text-[#8B9AA5] font-medium">{post.readTime || "4 min read"}</span>
+                      <span className="text-xs text-[#8B9AA5] font-medium">{getReadTime(post)}</span>
                       <span className={`flex items-center gap-1.5 font-body text-[13px] font-semibold transition-all group-hover:gap-2.5 ${
                         isAlert ? "text-[#EF4444]" : "text-[#35D6D0]"
                       }`}>
@@ -264,9 +229,11 @@ export function MickydonsKnowledgeHub() {
         )}
         
         <div className="flex flex-col md:flex-row items-center justify-center gap-6">
-          <Button variant="outline" size="lg" className="px-8 h-14 font-body text-[13px] sm:text-[14px] font-semibold uppercase tracking-wider border-[#24313D] bg-[#0C131B] text-[#F1F5F7] hover:bg-[#111C26] hover:border-[#35D6D0]/50 rounded-xl">
-            Load More Articles
-          </Button>
+          {posts.length > 6 && (
+            <Button variant="outline" size="lg" className="px-8 h-14 font-body text-[13px] sm:text-[14px] font-semibold uppercase tracking-wider border-[#24313D] bg-[#0C131B] text-[#F1F5F7] hover:bg-[#111C26] hover:border-[#35D6D0]/50 rounded-xl">
+              Load More Articles
+            </Button>
+          )}
           <Button size="lg" asChild className="px-8 h-14 font-body text-[13px] sm:text-[14px] font-bold tracking-wide uppercase bg-[#35D6D0] text-[#06090D] hover:bg-[#8AF2E9] shadow-xl shadow-[#35D6D0]/25 rounded-xl border border-[#8AF2E9]/40 transition-all hover:scale-105">
             <Link href="#request" className="flex items-center gap-2">
               Start a Free Case Assessment <ArrowRight className="ml-1 w-4 h-4" />
