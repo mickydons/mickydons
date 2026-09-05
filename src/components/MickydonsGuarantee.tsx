@@ -18,7 +18,7 @@ const commitments = [
   },
   {
     title: "Honest Expectations",
-    description: "We explain what is possible—and what isn't.",
+    description: "We explain what is possible and what isn't.",
     icon: Scale,
     isHighlight: false,
   },
@@ -50,7 +50,7 @@ export function MickydonsGuarantee() {
             <span className="text-[#35D6D0]">to Your Case.</span>
           </h2>
           <p className="text-[#8B9AA5] text-[15px] sm:text-[17px] font-body font-normal leading-relaxed max-w-2xl mx-auto">
-            We focus on evidence, digital traces and clear documentation—not empty promises.
+            We focus on evidence, digital traces and clear documentation, not empty promises.
           </p>
         </div>
 
@@ -116,7 +116,7 @@ export function MickydonsGuarantee() {
             </div>
           </div>
           <p className="mt-6 text-sm text-[#8B9AA5] font-body italic">
-            &ldquo;We investigate what happened, trace the available evidence, and explain your genuine options.&rdquo; — Mickydons Investigation Desk
+            &ldquo;We investigate what happened, trace the available evidence, and explain your genuine options.&rdquo; - Mickydons Investigation Desk
           </p>
         </div>
       </div>

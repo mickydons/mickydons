@@ -80,7 +80,7 @@ export function MickydonsServices() {
             <span className="text-[#35D6D0]">Different Types of Scams.</span>
           </h2>
           <p className="text-[#8B9AA5] text-[15px] sm:text-[17px] font-body font-normal leading-relaxed max-w-2xl mx-auto">
-            Scammers use different methods—fake trading platforms, romance manipulation, or blocked withdrawals. We investigate what happened, document the facts, and pursue the available recovery paths.
+            Scammers use different methods: fake trading platforms, romance manipulation, or blocked withdrawals. We investigate what happened, document the facts, and pursue the available recovery paths.
           </p>
         </div>
 

@@ -84,7 +84,7 @@ export function MickydonsMethodology() {
                     </span>
                   </div>
                   <h3 className="text-[18px] font-body font-semibold text-[#F1F5F7] group-hover:text-[#35D6D0] transition-colors">
-                    {step.step} — {step.title}
+                    {step.title}
                   </h3>
                   <p className="text-[#8B9AA5] font-body text-[14px] sm:text-[15px] font-normal leading-relaxed">
                     {step.description}

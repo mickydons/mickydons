@@ -27,8 +27,11 @@ const iconMap = {
 const TechnicalRenderer = ({ text }: { text: string }) => {
   if (!text) return null;
 
+  // Sanitize any em dashes into clean punctuation
+  const cleanText = text.replace(/—/g, ', ');
+
   // Split by double newlines for paragraphs first
-  const paragraphs = text.split(/\n\n+/);
+  const paragraphs = cleanText.split(/\n\n+/);
 
   return (
     <div className="space-y-4">

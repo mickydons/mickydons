@@ -21,8 +21,8 @@ import { cn } from "@/lib/utils";
 const logs = [
   { time: "09:42:12", event: "VASP Endpoint Identification", source: "Chainalysis Relay", status: "Verified", color: "text-primary" },
   { time: "09:40:05", event: "Malicious Smart Contract Flagged", source: "Heuristic Engine", status: "Alert", color: "text-red-400" },
-  { time: "09:38:44", event: "GPU Cluster: Key Fragment Reconstructed", source: "Zürich Lab Node 4", status: "Success", color: "text-green-400" },
-  { time: "09:35:10", event: "Inbound Forensic Request: AH-4925", source: "Encrypted API", status: "Queued", color: "text-accent" },
+  { time: "09:38:44", event: "GPU Cluster: Key Fragment Reconstructed", source: "Trace Cluster Node 4", status: "Success", color: "text-green-400" },
+  { time: "09:35:10", event: "Inbound Case Assessment: MK-4925", source: "Encrypted API", status: "Queued", color: "text-accent" },
   { time: "09:32:11", event: "Node Integrity Scan Complete", source: "Global Network", status: "Optimal", color: "text-primary" },
   { time: "09:30:01", event: "Lazarus Group Wallet Movement Detected", source: "Threat Intel", status: "Monitored", color: "text-amber-400" },
 ];

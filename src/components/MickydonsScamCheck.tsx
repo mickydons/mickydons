@@ -37,9 +37,9 @@ const warningSigns = [
   },
   {
     id: 6,
-    text: "Someone claims they can recover your lost funds—but asks for payment first.",
+    text: "Someone claims they can recover your lost funds, but asks for payment first.",
     category: "Recovery Scam",
-    highlight: "claims they can recover your lost funds—but asks for payment first",
+    highlight: "claims they can recover your lost funds, but asks for payment first",
   },
   {
     id: 7,

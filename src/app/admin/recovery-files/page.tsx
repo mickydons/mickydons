@@ -154,7 +154,7 @@ export default function RecoveryFilesPage() {
                           className="border-white/5 hover:bg-white/5 group transition-colors cursor-pointer"
                           onClick={() => setSelectedCase(file)}
                         >
-                          <TableCell className="font-mono text-[10px] font-bold text-primary uppercase">AH-{file.id.slice(0, 4)}</TableCell>
+                          <TableCell className="font-mono text-[10px] font-bold text-primary uppercase">MK-{file.id.slice(0, 4)}</TableCell>
                           <TableCell className="text-sm font-medium">{file.full_name}</TableCell>
                           <TableCell>
                             <div className="flex items-center gap-2">
@@ -198,7 +198,7 @@ export default function RecoveryFilesPage() {
               <DialogHeader>
                 <div className="flex items-center gap-2 text-primary font-bold text-[10px] uppercase tracking-widest mb-2">
                   <ShieldCheck className="w-4 h-4" />
-                  Forensic File AH-{selectedCase.id.slice(0, 4)}
+                  Case File MK-{selectedCase.id.slice(0, 4)}
                 </div>
                 <DialogTitle className="text-2xl font-headline font-bold">
                   {selectedCase.full_name}
