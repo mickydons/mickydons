@@ -77,18 +77,20 @@ export default function RootLayout({
         
         <Toaster />
 
-        {/* Tawk.to Live Support - Applied to every page */}
-        <Script id="tawk-setup" strategy="afterInteractive">
+        {/* Tawk.to Script - Applied to every page before </body> */}
+        <Script id="tawk-to" strategy="afterInteractive">
           {`
             var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+            (function(){
+            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+            s1.async=true;
+            s1.src='https://embed.tawk.to/6a9bcca2dda389344be8090e/1k1o9emt5';
+            s1.charset='UTF-8';
+            s1.setAttribute('crossorigin','*');
+            s0.parentNode.insertBefore(s1,s0);
+            })();
           `}
         </Script>
-        <Script 
-          id="tawk-to" 
-          src="https://embed.tawk.to/69dc8db265fbbc1c34b46a20/1jm2oj0sg"
-          strategy="afterInteractive"
-          crossOrigin="anonymous"
-        />
       </body>
     </html>
   );
