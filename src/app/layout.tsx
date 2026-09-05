@@ -30,6 +30,23 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${manrope.variable} ${dmSerifDisplay.variable}`}>
       <head>
+        {/* Google tag (gtag.js) */}
+        <Script 
+          async 
+          src="https://www.googletagmanager.com/gtag/js?id=G-Z7TZPV1THL" 
+          strategy="afterInteractive" 
+        />
+        <Script id="google-tag" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-Z7TZPV1THL');
+            gtag('config', 'AW-18141846129');
+          `}
+        </Script>
+
         {/* Google Tag Manager - GTM-5Q6LQMZX */}
         <Script id="google-tag-manager" strategy="afterInteractive">
           {`
@@ -41,21 +58,6 @@ export default function RootLayout({
           `}
         </Script>
         {/* End Google Tag Manager */}
-
-        {/* Google tag (gtag.js) - AW-18141846129 */}
-        <Script 
-          async 
-          src="https://www.googletagmanager.com/gtag/js?id=AW-18141846129" 
-          strategy="afterInteractive" 
-        />
-        <Script id="google-ads-tag" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'AW-18141846129');
-          `}
-        </Script>
         
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
